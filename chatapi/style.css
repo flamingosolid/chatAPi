@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 37rem;
+  grid-template-areas: ". . c c c c . .";
+  height: 100vh;
+}
+
+.chatbox {
+  grid-area: c;
+  background-color: #dcf1f7;
+  display: grid;
+  justify-content: start;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid lightgray;
+}
+
+.chat {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.answer {
+  height: 100px;
+}
+
+input {
+  height: 100px;
+  width: 400px;
+}
+
+button {
+  padding: 1rem 1.7rem;
+}
